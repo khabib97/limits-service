@@ -1,10 +1,9 @@
 package com.old.school.microservices.limitsservice.bean;
 
 public class Limits {
-	
 	private int minimum;
 	private int maximum;
-	
+
 	public Limits() {
 		super();
 	}
@@ -31,8 +30,4 @@ public class Limits {
 		this.maximum = maximum;
 	}
 
-	@Override
-	public String toString() {
-		return "Limits [minimum=" + minimum + ", maximum=" + maximum + "]";
-	}
 }

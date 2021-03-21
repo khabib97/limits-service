@@ -9,12 +9,14 @@ import com.old.school.microservices.limitsservice.configuration.Configuration;
 
 @RestController
 public class LimitsController {
-	
+
 	@Autowired
 	private Configuration configuration;
 
 	@GetMapping("/limits")
 	public Limits retrieveLimits() {
-		return new Limits(configuration.getMinimum(),configuration.getMaximum());
+		return new Limits(configuration.getMinimum(), 
+				configuration.getMaximum());
+
 	}
 }
